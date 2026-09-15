@@ -1,0 +1,25 @@
+[project]
+name = "vu-garch-lstm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fazle", email = "fazleadyuta4@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "apache-airflow>=3.3.1",
+    "bentoml>=1.4.39",
+    "dvc[s3]>=3.67.1",
+    "evidently>=0.7.23",
+    "mlflow>=3.16.0",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+vu-garch-lstm = "vu_garch_lstm:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
