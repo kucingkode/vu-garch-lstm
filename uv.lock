@@ -38,6 +38,15 @@ wheels = [
 ]
 
 [[package]]
+name = "aiofiles"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2b/64/437053d6a4ba3b3eea1044131a25b458489320cb9609e19ac17261e4dc9b/aiofiles-0.5.0.tar.gz", hash = "sha256:98e6bcfd1b50f97db4980e182ddd509b7cc35909e903a8fe50d8849e02d815af", size = 9543, upload-time = "2020-04-11T23:17:32.732Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f4/2b/078a9771ae4b67e36b0c2a973df845260833a4eb088b81c84b738509b4c4/aiofiles-0.5.0-py3-none-any.whl", hash = "sha256:377fdf7815cc611870c59cbd07b68b180841d2a2b79812d8c218be02448c2acb", size = 11059, upload-time = "2020-04-11T23:17:31.143Z" },
+]
+
+[[package]]
 name = "aiohappyeyeballs"
 version = "2.7.1"
 source = { registry = "https://pypi.org/simple" }
@@ -188,6 +197,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/4e/8a/64761f4005f17809769d23e518d915db74e6310474e733e3593cfc854ef1/aiosqlite-0.22.1.tar.gz", hash = "sha256:043e0bd78d32888c0a9ca90fc788b38796843360c855a7262a532813133a0650", size = 14821, upload-time = "2025-12-23T19:25:43.997Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/00/b7/e3bf5133d697a08128598c8d0abc5e16377b51465a33756de24fa7dee953/aiosqlite-0.22.1-py3-none-any.whl", hash = "sha256:21c002eb13823fad740196c5a2e9d8e62f6243bd9e7e4a1f87fb5e44ecb4fceb", size = 17405, upload-time = "2025-12-23T19:25:42.139Z" },
+]
+
+[[package]]
+name = "aiostream"
+version = "0.4.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/9f/92/e10c6232f2e2e21a24ae9e6534292bd2d808ae43b719298f5599a2a38e4b/aiostream-0.4.5.tar.gz", hash = "sha256:3ecbf87085230fbcd9605c32ca20c4fb41af02c71d076eab246ea22e35947d88", size = 32627, upload-time = "2022-08-30T13:10:54.146Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4a/29/d94dc724b543d0ff16e177a3ce4eaa6253afb6350aa7ba372a8fe7e01f20/aiostream-0.4.5-py3-none-any.whl", hash = "sha256:25b7c2d9c83570d78c0ef5a20e949b7d0b8ea3b0b0a4f22c49d3f721105a6057", size = 35632, upload-time = "2022-08-30T13:10:52.844Z" },
 ]
 
 [[package]]
@@ -1446,6 +1464,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/71/e4/723ba469856bb493c948985e5bd562c8a65f2b93e70c896e9764ab76de00/dynaconf-3.3.5.tar.gz", hash = "sha256:a08f6ab44025034ef3c9f86b32548ab01efd4039094a74bd9f028a43c63d016f", size = 333426, upload-time = "2026-08-05T19:50:25.16Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/95/41/b38501c34c40c3261868a2af8ed5fffe3e6d889c680638708de27eb57788/dynaconf-3.3.5-py3-none-any.whl", hash = "sha256:b3b4a753d5c866fc85466b65fc58d4954f6ed7dc8aa67f2b15bcbfd85d184687", size = 271426, upload-time = "2026-08-05T19:50:23.802Z" },
+]
+
+[[package]]
+name = "easy-ansi"
+version = "0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/47/9c4620896ff45e41c391a206d4ce238ee9676eadb16b7a8ddcbb4e86f1b7/easy-ansi-0.3.tar.gz", hash = "sha256:d7e1b7cc34ec3f0032405925c8ea0713e6f18099ca6abfe3436c99951169361a", size = 12578, upload-time = "2020-03-05T04:22:39.613Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fb/9b/ebf00b81644fecbc383484db3de96b8fd5921ad2f28218bcdb98dc4ce505/easy_ansi-0.3-py3-none-any.whl", hash = "sha256:a4efc9411c8cb4e1a9947d516541c5d51b71cfa9d91320b76623c4dbff4b56dc", size = 18082, upload-time = "2020-03-05T04:22:38.042Z" },
 ]
 
 [[package]]
@@ -2909,6 +2936,22 @@ wheels = [
 ]
 
 [[package]]
+name = "multiplex"
+version = "0.6.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiofiles" },
+    { name = "aiostream" },
+    { name = "click" },
+    { name = "easy-ansi" },
+    { name = "pyte" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f7/fd/4a15d1cf50e47e6d14698a2c2171f40cba2fbd9d14075dd6e87e057bbe46/multiplex-0.6.1.tar.gz", hash = "sha256:4fe4a89eaeae6b33d199e772dda211ac1c3de10438c4534b790860a291c722dc", size = 28332, upload-time = "2022-12-25T12:11:16.619Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/f7/96e894de861ba265fdc95365219dfaf27d0c09648451b38a25b0bea88236/multiplex-0.6.1-py3-none-any.whl", hash = "sha256:23dc044fd84367a0b6953480c0a266c73bf57892e12067a682d42171f158757c", size = 31892, upload-time = "2022-12-25T12:11:14.624Z" },
+]
+
+[[package]]
 name = "mypy-extensions"
 version = "1.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3919,6 +3962,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f3/91/9c6ee907786a473bf81c5f53cf703ba0957b23ab84c264080fb5a450416f/pyparsing-3.3.2.tar.gz", hash = "sha256:c777f4d763f140633dcb6d8a3eda953bf7a214dc4eff598413c070bcdc117cbc", size = 6851574, upload-time = "2026-01-21T03:57:59.36Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl", hash = "sha256:850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d", size = 122781, upload-time = "2026-01-21T03:57:55.912Z" },
+]
+
+[[package]]
+name = "pyte"
+version = "0.8.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "wcwidth" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ab/ab/b599762933eba04de7dc5b31ae083112a6c9a9db15b01d3109ad797559d9/pyte-0.8.2.tar.gz", hash = "sha256:5af970e843fa96a97149d64e170c984721f20e52227a2f57f0a54207f08f083f", size = 92301, upload-time = "2023-11-12T09:33:43.217Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/59/d0/bb522283b90853afbf506cd5b71c650cf708829914efd0003d615cf426cd/pyte-0.8.2-py3-none-any.whl", hash = "sha256:85db42a35798a5aafa96ac4d8da78b090b2c933248819157fc0e6f78876a0135", size = 31627, upload-time = "2023-11-12T09:33:41.096Z" },
 ]
 
 [[package]]
@@ -5152,6 +5207,7 @@ dependencies = [
     { name = "dvc", extra = ["s3"] },
     { name = "evidently" },
     { name = "mlflow" },
+    { name = "multiplex" },
     { name = "pandas" },
     { name = "scikit-learn" },
 ]
@@ -5163,6 +5219,7 @@ requires-dist = [
     { name = "dvc", extras = ["s3"], specifier = ">=3.67.1" },
     { name = "evidently", specifier = ">=0.7.23" },
     { name = "mlflow", specifier = ">=3.16.0" },
+    { name = "multiplex", specifier = ">=0.6.1" },
     { name = "pandas", specifier = ">=3.0.5" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
 ]
