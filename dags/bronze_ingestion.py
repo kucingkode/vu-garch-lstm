@@ -10,7 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 @dag(
     dag_id="btc_bronze_ingestion",
     description="Incrementally ingest closed BTCUSDT 1h klines",
-    schedule="* * * * *",
+    schedule="5 * * * *",
     start_date=datetime(2026, 1, 1, tzinfo=UTC),
     catchup=False,
     max_active_runs=1,
